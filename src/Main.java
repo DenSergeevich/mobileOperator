@@ -5,10 +5,7 @@ public class Main {
         int balance = initialBalance +  refillAmount;
         System.out.println("Итоговый счет = " + balance);
 
-        if (refillAmount > 1000) {
-            int bonus = refillAmount / 100;
-            System.out.println("Бонус = " + bonus);
-
-        }
+        int bonus = refillAmount > 1000 ? (refillAmount/100) : 0;
+        System.out.println("Бонус = " + bonus );
     }
 }
